@@ -4,32 +4,52 @@
    ========================================================== */
 
 :root {
-  /* Brand Palette */
+  /* Brand Colors */
   --primary-color: #193854;
   --primary-hover: #294459;
-  --primary-dark: #10283d;
-  --primary-light: #eef2f5;
-  --primary-border: #c3ccd5;
-  --primary-subtle: #dce3e9;
+  --primary-dark: #122b40;
+
+  /* Brand Variations */
+  --primary-light: #e9eef2;
+  --primary-border: #b8c3ce;
+  --primary-subtle: #d7dfe6;
+
+  /* Secondary Brand */
+  --secondary-color: #536782;
+  --secondary-hover: #294459;
+  --secondary-light: #eef1f4;
+  --secondary-border: #c8d0d9;
+  --secondary-subtle: #dde3e9;
+
+  /* Accent Brand */
+  --accent-color: #294459;
+  --accent-hover: #193854;
+  --accent-light: #e7ecef;
+  --accent-border: #b7c3cc;
 
   /* Neutrals */
   --text-main: #193854;
   --text-secondary: #536782;
-  --text-muted: #6b7d94;
-  --bg-slate: #f7f9fb;
+  --text-muted: #718196;
+
+  --bg-slate: #f5f7f9;
   --card-bg: #ffffff;
-  --border-color: #d9e0e7;
+  --border-color: #d8dfe6;
 
   /* Typography */
   --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(25, 56, 84, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(25, 56, 84, 0.06),
-               0 2px 4px -1px rgba(25, 56, 84, 0.04);
-  --shadow-lg: 0 10px 25px -3px rgba(25, 56, 84, 0.08),
-               0 4px 6px -2px rgba(25, 56, 84, 0.04);
+  /* Shadows - Brand tinted */
+  --shadow-sm: 0 1px 3px rgba(25, 56, 84, 0.06);
+
+  --shadow-md:
+    0 4px 6px -1px rgba(25, 56, 84, 0.07),
+    0 2px 4px -1px rgba(25, 56, 84, 0.04);
+
+  --shadow-lg:
+    0 10px 25px -3px rgba(25, 56, 84, 0.09),
+    0 4px 6px -2px rgba(25, 56, 84, 0.05);
 }
 
 /* Base resets & typography */
