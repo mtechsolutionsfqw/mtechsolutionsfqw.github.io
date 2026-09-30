@@ -1,0 +1,280 @@
+/* ==========================================================
+   METCH Solution - Online Academy Stylesheet
+   Designed with Bootstrap 5.3 & Modern Custom CSS
+   ========================================================== */
+
+:root {
+  /* Brand Emerald Palette */
+  --primary-color: #059669;
+  --primary-hover: #047857;
+  --primary-dark: #065f46;
+  --primary-light: #ecfdf5;
+  --primary-border: #a7f3d0;
+  --primary-subtle: #d1fae5;
+
+  /* Neutrals */
+  --text-main: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --bg-slate: #f8fafc;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+
+  /* Typography */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+}
+
+/* Base resets & typography */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-main);
+  background-color: var(--bg-slate);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-font {
+  font-family: var(--font-heading);
+}
+
+/* Brand Utility Classes */
+.text-brand { color: var(--primary-color) !important; }
+.bg-brand { background-color: var(--primary-color) !important; }
+.bg-brand-light { background-color: var(--primary-light) !important; }
+.border-brand-subtle { border-color: var(--primary-border) !important; }
+
+/* Buttons */
+.btn-brand {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: 1px solid var(--primary-color);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-brand:hover, .btn-brand:focus {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.28);
+}
+
+.btn-brand-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-brand-outline:hover {
+  background-color: var(--primary-light);
+  color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+/* Navbar */
+.main-navbar {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #059669, #0d9488);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 0.925rem;
+  color: var(--text-secondary) !important;
+  padding: 0.5rem 0.85rem !important;
+  position: relative;
+  transition: color 0.15s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Cards */
+.custom-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.custom-card:hover {
+  border-color: #6ee7b7;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+/* Step Badges */
+.step-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #059669, #0d9488);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.step-number-tag {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+}
+
+/* Floating WhatsApp Widget */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wa-bubble {
+  background: #ffffff;
+  color: var(--text-main);
+  padding: 8px 14px;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .wa-bubble { display: block; }
+}
+
+.wa-button {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  position: relative;
+}
+
+.wa-button:hover {
+  background-color: #20ba59;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.wa-button::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.35);
+  animation: pulseRadar 2s infinite;
+  z-index: -1;
+}
+
+@keyframes pulseRadar {
+  0% { transform: scale(0.95); opacity: 0.8; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+
+/* Course Image Header */
+.course-card-header {
+  height: 180px;
+  background: linear-gradient(135deg, #065f46 0%, #0f172a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: calc(1rem - 1px);
+  border-top-right-radius: calc(1rem - 1px);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.course-card-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#10b981 1px, transparent 1px);
+  background-size: 16px 16px;
+  opacity: 0.15;
+}
+
+.course-card-header i {
+  position: relative;
+  z-index: 1;
+  font-size: 3.5rem;
+  color: #a7f3d0;
+  transition: transform 0.25s ease;
+}
+
+.custom-card:hover .course-card-header i {
+  transform: scale(1.1);
+}
+
+/* Accordion */
+.accordion-button:not(.collapsed) {
+  color: var(--primary-dark);
+  background-color: var(--primary-light);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border-color: var(--primary-border);
+  box-shadow: 0 0 0 0.25rem rgba(5, 150, 105, 0.15);
+}
